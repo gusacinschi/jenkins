@@ -1,10 +1,7 @@
 pipeline {
     agent any // Allocate an agent for the pipeline to run on
 
-    tools {
-        // Specify the Gradle tool to use. Ensure you have configured it in Jenkins' Global Tool Configuration
-        gradle 'GRADLE_LATEST' // Replace 'GRADLE_LATEST' with the name you configured in Jenkins
-    }
+
 
     stages {
         stage('Build') { // Stage for building the project
